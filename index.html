@@ -25,17 +25,18 @@
                 overflow: hidden;
                 background-color: rgb(37, 37, 37);
                 /* fix at top of screen */
-                position: fixed;
+                position: sticky;
                 top: 0;
                 width: 100%;
             }
             li {
-                float: left;
+                float: right;
             }
             li a {
                 display: block;
                 color: thistle;
                 text-align: center;
+                text-decoration: none;
                 padding: 14px 16px;
                 background-color:rgb(37, 37, 37);
             }
@@ -47,11 +48,12 @@
 
     <body>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
             <li><a href="#">Projects</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Home</a></li>
         </ul>
-        <h1 style="color:darkslateblue"><b>Jackie Wu</b></h1>
+
+        <h1 style="color:darkslateblue">Jackie Wu</h1>
         <h5 style="color:midnightblue;">Sophomore computer science student at UC Berkeley!</h5>
     </body>
 </html>
