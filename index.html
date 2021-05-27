@@ -3,7 +3,7 @@
     <head>
         <title>Jackie Wu</title>
         <style>
-            nav {
+            /* nav {
                 display: flex;
                 justify-content: left;
                 flex-direction: row;
@@ -16,19 +16,40 @@
                 font-weight: bold;
                 text-align: center;
                 color:thistle;
-                margin-left: 2%;
+                margin-left: 2%; */
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(37, 37, 37);
+                /* fix at top of screen */
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: thistle;
+                text-align: center;
+                padding: 8px;
+                background-color:rgb(37, 37, 37);
+            }
+            li a:hover {
+                background-color: black;
             }
         </style>
     </head>
 
     <body>
-        <nav>
-            <ul class="container">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
+        <ul class="container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
         <h1 style="color:darkslateblue"><b>Jackie Wu</b></h1>
         <h5 style="color:midnightblue;">Sophomore computer science student at UC Berkeley!</h5>
     </body>
