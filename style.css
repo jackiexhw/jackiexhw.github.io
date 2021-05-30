@@ -1,0 +1,28 @@
+body {
+    margin:0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(49, 49, 49);
+    /* fix at top of screen */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: thistle;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    background-color:rgb(49, 49, 49);
+}
+li a:hover {
+    background-color: black;
+}
