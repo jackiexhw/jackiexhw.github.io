@@ -32,10 +32,28 @@ li a {
 li a:hover {
     background-color:rgb(212, 212, 212);
 }
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.navbar a {
+    float: right;
+    display: block;
+    color: rgb(197, 158, 214);
+    text-align: center;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background: rgb(212, 212, 212);
+}
 .landing {
     height: 100%;
     max-width: 300px;
     margin: auto;
+    text-align: center;
     color:rgb(197, 158, 214);
     font-family: Monaco, "Lucida Console", monospace;
 }
