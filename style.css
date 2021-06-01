@@ -12,9 +12,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(231, 231, 231);
     /* fix at top of screen */
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -23,19 +23,20 @@ li {
 }
 li a {
     display: block;
-    color:mediumpurple;
+    color:rgb(197, 158, 214);
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    background-color:rgb(209, 209, 209);
+    background-color:rgb(231, 231, 231);
 }
 li a:hover {
-    background-color:lightslategray;
+    background-color:rgb(212, 212, 212);
 }
 .landing {
     height: 100%;
-    text-align: center;
-    color:rgb(192, 147, 212);
+    max-width: 300px;
+    margin: auto;
+    color:rgb(197, 158, 214);
     font-family: Monaco, "Lucida Console", monospace;
 }
 .aboutme {
