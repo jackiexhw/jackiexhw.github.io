@@ -1,6 +1,7 @@
 html, body {
     margin:0;
     height: 100%;
+    background-color: ivory;
 }
 /* h1 {
     font-family: 'Allerta Stencil';
@@ -11,7 +12,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(209, 209, 209);
     /* fix at top of screen */
     position: sticky;
     top: 0;
@@ -22,19 +23,19 @@ li {
 }
 li a {
     display: block;
-    color: thistle;
+    color:mediumpurple;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    background-color:rgb(49, 49, 49);
+    background-color:rgb(209, 209, 209);
 }
 li a:hover {
-    background-color: black;
+    background-color:lightslategray;
 }
 .landing {
     height: 100%;
-    margin: auto;
-    color: rgb(255, 220, 151);
+    text-align: center;
+    color:rgb(192, 147, 212);
     font-family: Monaco, "Lucida Console", monospace;
 }
 .aboutme {
