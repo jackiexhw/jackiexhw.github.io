@@ -42,22 +42,33 @@ li a:hover {
 .navbar a {
     float: right;
     display: block;
+    padding: 14px 16px;
     color: rgb(197, 158, 214);
     text-align: center;
     text-decoration: none;
+    font-family: Monaco, "Lucida Console", monospace;
 }
 .navbar a:hover {
     background: rgb(212, 212, 212);
 }
+.main {
+    margin-top: 30px;
+}
 .landing {
+    /* text centered on screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    max-width: 300px;
+    /* max-width: 300px;
     margin: auto;
-    text-align: center;
-    color:rgb(197, 158, 214);
-    font-family: Monaco, "Lucida Console", monospace;
+    text-align: center; */
 }
 .aboutme {
     height: 100%;
     font-family: Monaco, "Lucida Console", monospace;
+}
+h1 {
+    font-family: Monaco, "Lucida Console", monospace;
+    color:rgb(197, 158, 214);
 }
