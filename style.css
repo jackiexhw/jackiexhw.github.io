@@ -1,5 +1,10 @@
 body {
     margin:0;
+    height: 100%;
+}
+h1 {
+    font-family: 'Allerta Stencil';
+    font-size: 30%;
 }
 ul {
     list-style-type: none;
@@ -25,4 +30,11 @@ li a {
 }
 li a:hover {
     background-color: black;
+}
+.landing {
+    height: 100%;
+    margin: auto;
+    background-color: darkslategray;
+    color: floralwhite;
+    font-family: Monaco, "Lucida Console", monospace;
 }
