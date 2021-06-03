@@ -1,38 +1,37 @@
-html, body {
+html {
+    scroll-padding-top: 65px;
+}
+body {
     margin:0;
-    height: 100%;
     background-color: ivory;
 }
-/* h1 {
-    font-family: 'Allerta Stencil';
-    font-size: 30%;
-} */
-ul {
-    list-style-type: none;
+nav ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
     overflow: hidden;
     background-color: rgb(231, 231, 231);
     /* fix at top of screen */
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
-li {
+nav li {
     float: right;
 }
-li a {
+nav li a {
     display: block;
     color:rgb(197, 158, 214);
     text-align: center;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 15px 20px;
     background-color:rgb(230, 230, 220);
 }
 li a:hover {
     background-color: rgb(219, 219, 209);
 }
-.navbar {
+/* .navbar {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -42,7 +41,8 @@ li a:hover {
 .navbar a {
     float: right;
     display: block;
-    padding: 14px 16px;
+    height: 8vh;
+    padding-right: 2vw;
     color: rgb(197, 158, 214);
     text-align: center;
     text-decoration: none;
@@ -50,35 +50,33 @@ li a:hover {
 }
 .navbar a:hover {
     background: rgb(212, 212, 212);
-}
+} */
 
-.main {
-    margin-top: 30px;
-    margin-right: 5%;
-}
-.container {
-    position: relative;
+.section {
     height: 100vh;
+    display: block;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.center_container {
+    margin-top: 65px;
+    height: 90vh;
+    position: relative;
 }
 .landing {
     /* text centered on screen */
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; */
-
-    /* max-width: 300px;
-    margin: auto;
-    text-align: center; */
+    text-align: center;
 }
 .aboutme {
-    height: 100%;
+    /* height: 100vh; */
     font-family: Monaco, "Lucida Console", monospace;
+}
+.proj {
+    /* height: 100vh; */
 }
 h1 {
     font-family: Monaco, "Lucida Console", monospace;
