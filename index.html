@@ -9,6 +9,7 @@
     <body>
         <nav>
             <ul>
+                <li><a href="#birds">Birds</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#home">Home</a></li>
@@ -25,9 +26,11 @@
         <div class="section">
             <div class="center_container" id="home">
                 <div class="landing">
-                    <h1>Jackie Wu</h1>
-                    <hr width=30%>
-                    <p>text</p>
+                    <h1 style="font-size:10vh">Jackie Wu</h1>
+                    <a href="https://www.linkedin.com/in/jackie-wu-7b80a2213" rel="noopener noreferrer" target="_blank"> 
+                        <img class=small_img src=site_images\linkedinIcon.png alt="LinkedIn"></a>
+                    <a href="site_images/jackie_wu_resume.pdf" rel="noopener noreferrer" target="_blank"> 
+                        <img class=small_img src=site_images\resumeIcon.png alt="Resume"></a>
                 </div>
             </div>
         </div>
@@ -42,7 +45,69 @@
         <div class="section">
             <div class="proj" id="projects">
                 <h1>Projects</h1>
+                <p> 
             </div>
-        </div>        
+        </div>       
+        
+        
+        <div class="section">
+            <div id="birds">
+                <h1>Birds</h1>
+                <p>Click an image to enlarge it and see the bird species, click the X button to close!</p>
+                <img class="imgGallery" src=site_images\amer_robin.JPG alt="American Robin">
+                <img class="imgGallery" src=site_images\ladder-backed_wp.JPG alt="Ladder-Backed Woodpecker">
+                <img class="imgGallery" src=site_images\amer_goldfinch.JPG alt="American Goldfinch">
+                <img class="imgGallery" src=site_images\amer_coot.JPG alt="American Coot">
+                <img class="imgGallery" src=site_images\mourning_dove.JPG alt="Mourning Dove">
+                <img class="imgGallery" src=site_images\spotted_towhee.JPG alt="Spotted Towhee">
+                <img class="imgGallery" src=site_images\allens_hum.JPG alt="Allen's Hummingbird">
+                <img class="imgGallery" src=site_images\ca_thrasher.JPG alt="California Thrasher">
+                <img class="imgGallery" src=site_images\barn_swallow.JPG alt="Barn Swallow">
+                <img class="imgGallery" src=site_images\bewicks_wren.JPG alt="Bewick's Wren">
+                <img class="imgGallery" src=site_images\night_heron.JPG alt="Black-Capped Night Heron">
+                <img class="imgGallery" src=site_images\west_bluebird.JPG alt="Western Bluebird">
+
+                <img class="imgGallery" src=site_images\black_phoebe.JPG alt="Black Phoebe">
+                <img class="imgGallery" src=site_images\dark-eyed_junco.JPG alt="Dark-Eyed Junco">
+                <img class="imgGallery" src=site_images\red-should_hawk.JPG alt="Red-Shouldered Hawk">
+                <img class="imgGallery" src=site_images\ruby-throated_hum.JPG alt="Ruby-Throated Hummingbird">
+                <img class="imgGallery" src=site_images\western_phoebe.JPG alt="Western Phoebe">
+                <img class="imgGallery" src=site_images\great_egret.JPG alt="Great Egret">
+                <img class="imgGallery" src=site_images\house_finch.JPG alt="House Finch">
+                <img class="imgGallery" src=site_images\song_sparrow.JPG alt="Song Sparrow">
+                <img class="imgGallery" src=site_images\killdeer.JPG alt="Killdeer">
+                <img class="imgGallery" src=site_images\scrub_jay.JPG alt="Scrub Jay">
+                
+                <img class="imgGallery" src=site_images\white-crowned_sparrow.JPG alt="White-Crowned Sparrow">
+                <img class="imgGallery" src=site_images\yellow_rumped_warbler.JPG alt="Yellow-Rumped Warbler">
+                <div class="modal" id="theModal">
+                    <span class="close">&times;</span>
+                    <img class="modalImg" id="img00"/>
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+        </div>
+
     </body>
+    <script>
+        var modal = document.getElementById("theModal");
+        var i;
+        var img = document.getElementsByClassName("imgGallery");
+        var modalImg = document.getElementById("img00");
+        var captionText = document.getElementById("caption");
+        for(i=0;i< img.length;i++)
+        {    
+            img[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+        }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
 </html>
