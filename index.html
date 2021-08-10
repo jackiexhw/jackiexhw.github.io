@@ -3,6 +3,7 @@
     <head>
         <title>Jackie Wu</title>
         <link rel="stylesheet" type="text/css" href=style.css>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
     </head>
 
@@ -10,27 +11,25 @@
         <nav>
             <ul>
                 <li><a href="#birds">Birds</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#home">Home</a></li>
             </ul>
         </nav>
-        
-
-        <!-- <div class="navbar">
-            <a href="#projects">Projects</a>
-            <a href="#about">About Me</a>
-            <a href="#home">Home</a>
-        </div> -->
 
         <div class="section">
             <div class="center_container" id="home">
                 <div class="landing">
                     <h1 style="font-size:10vh">Jackie Wu</h1>
-                    <a href="https://www.linkedin.com/in/jackie-wu-7b80a2213" rel="noopener noreferrer" target="_blank"> 
-                        <img class=small_img src=site_images\linkedinIcon.png alt="LinkedIn"></a>
-                    <a href="site_images/jackie_wu_resume.pdf" rel="noopener noreferrer" target="_blank"> 
-                        <img class=small_img src=site_images\resumeIcon.png alt="Resume"></a>
+                    <a href="https://www.linkedin.com/in/jackiew" rel="noopener noreferrer" target="_blank"> 
+                        <img class=small_img src=site_images\linkedinIcon.png alt="LinkedIn">
+                    </a>
+                    <a href="site_images/jackiewu_resume.pdf" rel="noopener noreferrer" target="_blank"> 
+                        <img class=small_img src=site_images\resumeIcon.png alt="Resume">
+                    </a>
+                    <a data-toggle="tooltip" title="jackiew@berkeley.edu"> 
+                        <img class=small_img src=site_images\emailIcon.png>
+                    </a>
                 </div>
             </div>
         </div>
@@ -38,22 +37,26 @@
         <div class="section">
             <div class="aboutme" id="about">
                 <h1>About Me</h1>
-                <p>Hello! I'm Jackie, a sophomore studying computer science at UC Berkeley.</p>
+                <p>Hello! I'm Jackie, a second year at U.C. Berkeley studying Computer Science (and possibly 
+                    Cognitive Science as well). I also enjoy teaching and have been an academic intern for CS 61B
+                 (Data Structures), mentor for Computer Science Mentors 61A, and will be a tutor for CS 61A
+                 this fall!</p>
             </div>
         </div>
     
-        <div class="section">
+        <!-- <div class="section">
             <div class="proj" id="projects">
                 <h1>Projects</h1>
                 <p> 
             </div>
-        </div>       
+        </div>        -->
         
         
         <div class="section">
             <div id="birds">
                 <h1>Birds</h1>
-                <p>Click an image to enlarge it and see the bird species, click the X button to close!</p>
+                <p>Photographing birds is one of my biggest hobbies so here are some of the pictures I've taken. 
+                    Click an image to enlarge it and see the bird species, click the X button to close!</p>
                 <img class="imgGallery" src=site_images\amer_robin.JPG alt="American Robin">
                 <img class="imgGallery" src=site_images\ladder-backed_wp.JPG alt="Ladder-Backed Woodpecker">
                 <img class="imgGallery" src=site_images\amer_goldfinch.JPG alt="American Goldfinch">
@@ -109,5 +112,11 @@
         span.onclick = function() { 
             modal.style.display = "none";
         }
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
     </script>
 </html>

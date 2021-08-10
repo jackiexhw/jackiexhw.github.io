@@ -5,6 +5,10 @@ body {
     margin:0;
     background-color: ivory;
 }
+p {
+    margin-right: 5vw;
+    line-height: 50px;
+}
 nav ul {
     margin: 0;
     padding: 0;
@@ -31,31 +35,19 @@ nav li a {
 li a:hover {
     background-color: rgb(219, 219, 209);
 }
-/* .navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(230, 230, 220);
-}
-.navbar a {
-    float: right;
-    display: block;
-    height: 8vh;
-    padding-right: 2vw;
-    color: rgb(197, 158, 214);
-    text-align: center;
-    text-decoration: none;
-    font-family: Monaco, "Lucida Console", monospace;
-}
-.navbar a:hover {
-    background: rgb(212, 212, 212);
-} */
+
 .small_img {
     height: 5vh;
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+
 
 .section {
     height: 100vh;
