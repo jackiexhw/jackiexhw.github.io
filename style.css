@@ -50,7 +50,7 @@ li a:hover {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    background-color:slategray;
+    background-color:rgb(121, 121, 115);
     color: rgb(230, 230, 220);
     font-size: 2vh;
     text-align: center;
