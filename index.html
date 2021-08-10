@@ -21,15 +21,19 @@
             <div class="center_container" id="home">
                 <div class="landing">
                     <h1 style="font-size:10vh">Jackie Wu</h1>
-                    <a href="https://www.linkedin.com/in/jackiew" rel="noopener noreferrer" target="_blank"> 
-                        <img class=small_img src=site_images\linkedinIcon.png alt="LinkedIn">
-                    </a>
                     <a href="site_images/jackiewu_resume.pdf" rel="noopener noreferrer" target="_blank"> 
                         <img class=small_img src=site_images\resumeIcon.png alt="Resume">
                     </a>
-                    <a data-toggle="tooltip" title="jackiew@berkeley.edu"> 
-                        <img class=small_img src=site_images\emailIcon.png>
+                    <a href="https://www.linkedin.com/in/jackiew" rel="noopener noreferrer" target="_blank"> 
+                        <img class=small_img src=site_images\linkedinIcon.png alt="LinkedIn">
                     </a>
+                    <a class="tooltip"> 
+                        <img class=small_img src=site_images\emailIcon.png>
+                        <span class="tooltiptext">jackiew@berkeley.edu</span>
+                    </a>
+                    <!-- <a data-toggle="tooltip" title="jackiew@berkeley.edu"> 
+                        <img class=small_img src=site_images\emailIcon.png>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -114,9 +118,9 @@
         }
     </script>
 
-<script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
+    <script>
+    (document).ready(function(){
+      ('[data-toggle="tooltip"]').tooltip();   
     });
     </script>
 </html>
