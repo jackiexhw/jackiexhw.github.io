@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jackie Pei</title>
+        <link rel="stylesheet" type="text/css" href=style.css>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href="birds.html">Birds</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <div class="section">
+            <div id="birds">
+                <h1>Birds</h1>
+                <p>Photographing birds is one of my biggest hobbies and here are some of the pictures I've taken. 
+                    Click an image to enlarge it and see the bird species, click the X button to close!</p>
+                <div class="vert_center"">
+                    <img class="imgGallery" src=../assets\amer_robin.JPG alt="American Robin">
+                    <img class="imgGallery" src=../assets\ladder-backed_wp.JPG alt="Ladder-Backed Woodpecker">
+                <img class="imgGallery" src=../assets\amer_goldfinch.JPG alt="American Goldfinch">
+                <img class="imgGallery" src=../assets\amer_coot.JPG alt="American Coot">
+                </div>
+                <!-- <img class="imgGallery" src=../assets\amer_robin.JPG alt="American Robin"> -->
+                <!-- <img class="imgGallery" src=../assets\ladder-backed_wp.JPG alt="Ladder-Backed Woodpecker">
+                <img class="imgGallery" src=../assets\amer_goldfinch.JPG alt="American Goldfinch">
+                <img class="imgGallery" src=../assets\amer_coot.JPG alt="American Coot"> -->
+                <img class="imgGallery" src=../assets\mourning_dove.JPG alt="Mourning Dove">
+                <img class="imgGallery" src=../assets\spotted_towhee.JPG alt="Spotted Towhee">
+                <img class="imgGallery" src=../assets\allens_hum.JPG alt="Allen's Hummingbird">
+                <img class="imgGallery" src=../assets\ca_thrasher.JPG alt="California Thrasher">
+                <img class="imgGallery" src=../assets\barn_swallow.JPG alt="Barn Swallow">
+                <img class="imgGallery" src=../assets\bewicks_wren.JPG alt="Bewick's Wren">
+                <img class="imgGallery" src=../assets\night_heron.JPG alt="Black-Capped Night Heron">
+                <img class="imgGallery" src=../assets\west_bluebird.JPG alt="Western Bluebird">
+
+                <img class="imgGallery" src=../assets\black_phoebe.JPG alt="Black Phoebe">
+                <img class="imgGallery" src=../assets\dark-eyed_junco.JPG alt="Dark-Eyed Junco">
+                <img class="imgGallery" src=../assets\red-should_hawk.JPG alt="Red-Shouldered Hawk">
+                <img class="imgGallery" src=../assets\ruby-throated_hum.JPG alt="Ruby-Throated Hummingbird">
+                <img class="imgGallery" src=../assets\western_phoebe.JPG alt="Western Phoebe">
+                <img class="imgGallery" src=../assets\great_egret.JPG alt="Great Egret">
+                <img class="imgGallery" src=../assets\house_finch.JPG alt="House Finch">
+                <img class="imgGallery" src=../assets\song_sparrow.JPG alt="Song Sparrow">
+                <img class="imgGallery" src=../assets\killdeer.JPG alt="Killdeer">
+                <img class="imgGallery" src=../assets\scrub_jay.JPG alt="Scrub Jay">
+                
+                <img class="imgGallery" src=../assets\white-crowned_sparrow.JPG alt="White-Crowned Sparrow">
+                <img class="imgGallery" src=../assets\yellow_rumped_warbler.JPG alt="Yellow-Rumped Warbler">
+                <div class="modal" id="theModal">
+                    <span class="close">&times;</span>
+                    <img class="modalImg" id="img00"/>
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+    <script>
+        var modal = document.getElementById("theModal");
+        var i;
+        var img = document.getElementsByClassName("imgGallery");
+        var modalImg = document.getElementById("img00");
+        var captionText = document.getElementById("caption");
+        for(i=0;i< img.length;i++)
+        {    
+            img[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+        }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+
+    <script>
+    (document).ready(function(){
+      ('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+</html>>
+    

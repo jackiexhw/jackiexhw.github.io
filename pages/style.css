@@ -1,9 +1,14 @@
+:root {
+    --bg-color: rgb(243, 243, 243);
+    --blue: rgb(64, 109, 131);
+}
 html {
     scroll-padding-top: 65px;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     margin:0;
-    background-color: ivory;
+    background-color: var(--bg-color);
 }
 p {
     margin-right: 5vw;
@@ -14,7 +19,7 @@ nav ul {
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(230, 230, 230);
     /* fix at top of screen */
     position: fixed;
     top: 0;
@@ -26,14 +31,15 @@ nav li {
 }
 nav li a {
     display: block;
-    color:rgb(197, 158, 214);
+    color:var(--blue);
+    font-size: 20px;
+    font-weight: 800;
     text-align: center;
     text-decoration: none;
-    padding: 15px 20px;
-    background-color:rgb(230, 230, 220);
+    padding: 15px 30px;
 }
 li a:hover {
-    background-color: rgb(219, 219, 209);
+    background-color: rgb(220, 220, 220);
 }
 
 .small_img {
@@ -50,7 +56,7 @@ li a:hover {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    background-color:rgb(121, 121, 115);
+    background-color: var(--blue);
     color: rgb(230, 230, 220);
     font-size: 2vh;
     text-align: center;
@@ -79,15 +85,13 @@ li a:hover {
 
 
 .section {
-    height: 100vh;
     display: block;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 6%;
+    margin-left: 6%;
 }
-.center_container {
-    margin-top: 65px;
-    height: 90vh;
-    position: relative;
+.vert_center {
+    vertical-align: middle;
+    width: 20vw;
 }
 .landing {
     /* text centered on screen */
@@ -97,24 +101,24 @@ li a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.aboutme {
-    /* height: 100vh; */
-    font-family: Monaco, "Lucida Console", monospace;
+.home {
+    margin-top: 25vh;
 }
 .proj {
     /* height: 100vh; */
 }
 h1 {
-    font-family: Monaco, "Lucida Console", monospace;
-    color:rgb(197, 158, 214);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(209, 134, 64);
 }
 
 /* modal gallery */
 .imgGallery {
     border-radius: 10px;
     cursor: pointer;
-    height: 35vh;
-    width: auto;
+    height: auto;
+    margin-top: auto;
+    width: 21vw;
 }
 .modal {
     display: none;
@@ -131,8 +135,8 @@ h1 {
 .modalImg {
     margin: auto;
     display: block;
-    width: auto;
-    height: 75vh;
+    /* width: 25vw;
+    height: auto; */
 }
 #caption {
     margin: auto;
