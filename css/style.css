@@ -1,19 +1,85 @@
 :root {
-    --bg-color: rgb(243, 243, 243);
+    --bg-color: rgb(250, 250, 250);
     --blue: rgb(64, 109, 131);
 }
+/* general */
 html {
+    padding-top: 65px;
     scroll-padding-top: 65px;
     font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    margin:0;
     background-color: var(--bg-color);
+}
+h1 {
+    color:rgb(209, 134, 64);
+}
+h2 {
+    color:rgb(209, 134, 64);
 }
 p {
     margin-right: 5vw;
-    line-height: 50px;
 }
+
+.home {
+    margin-top: 20vh;
+}
+.small_img {
+    height: 5vh;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: none;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: var(--blue);
+    color: rgb(230, 230, 220);
+    font-size: 2vh;
+    text-align: center;
+    position: absolute;
+    padding: .5vh;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* unused? */
+.section {
+    display: block;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+.proj-section {
+    display: block;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+.proj-img {
+    height: 15vh;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.vert_center {
+    vertical-align: middle;
+    width: 20vw;
+}
+.landing {
+    /* text centered on screen */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* nav bar */
 nav ul {
     margin: 0;
     padding: 0;
@@ -42,75 +108,7 @@ li a:hover {
     background-color: rgb(220, 220, 220);
 }
 
-.small_img {
-    height: 5vh;
-    margin-right: 10px;
-    margin-left: 10px;
-}
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: none;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    background-color: var(--blue);
-    color: rgb(230, 230, 220);
-    font-size: 2vh;
-    text-align: center;
-    position: absolute;
-    padding: .5vh;
-    /* width: 120px;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px; */
-    /* width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    /* position: absolute;
-    z-index: 1; */
-  }
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-
-
-.section {
-    display: block;
-    margin-right: 6%;
-    margin-left: 6%;
-}
-.vert_center {
-    vertical-align: middle;
-    width: 20vw;
-}
-.landing {
-    /* text centered on screen */
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.home {
-    margin-top: 25vh;
-}
-.proj {
-    /* height: 100vh; */
-}
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(209, 134, 64);
-}
 
 /* modal gallery */
 .imgGallery {
@@ -135,8 +133,8 @@ h1 {
 .modalImg {
     margin: auto;
     display: block;
-    /* width: 25vw;
-    height: auto; */
+    height: 70vh;
+    width: auto;
 }
 #caption {
     margin: auto;
@@ -157,12 +155,8 @@ h1 {
     cursor: pointer;
     color: grey;
 }
-@media only screen and (max-width: 700px) {
-    .modalImage {
-    width: 100%;
-    }
-}
-/* bird images */
+
+/* (unused) bird images */
 .row {
     display: flex;
     flex-wrap: wrap;
